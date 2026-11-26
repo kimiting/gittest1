@@ -6,6 +6,7 @@
  form.innerHTML='<label for="artwork-query">作品を検索</label><div><input id="artwork-query" type="search" placeholder="作品名・時代・地域で検索" autocomplete="off"><button type="reset">クリア</button></div>';
  filters.before(form);
  const empty=document.createElement('p');
+ empty.className='search-empty';
  empty.textContent='条件に合う作品がありません。キーワードや地域を変更してください。';
  empty.hidden=true;
  empty.setAttribute('role','status');
